@@ -7,13 +7,27 @@ body {
   box-sizing: border-box;
   font-family: 'Roboto', Helvetica, sans-serif;
 }
+a {
+  text-decoration: none;
+  color: #fff;
+}
 
 .quotes_container {
-  background-color: pink;
+  background-color: rgb(228, 250, 250);
   max-width: 650px;
   min-height: 270px;
 }
 
 .quotes_body {
-  background-color: grey;
+  background-color: rgb(158, 185, 187);
+  display: flex;
+  flex-direction: column;
+}
+.footer {
+  width: 450px;
+  text-align: center;
+  display: block;
+  margin: 15px auto 30px auto;
+  font-size: 0.8em;
+  color: #fff;
 }

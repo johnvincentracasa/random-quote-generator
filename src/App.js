@@ -84,11 +84,13 @@ const App = () => {
           <a
             id="tweet-quote"
             className="btn btn-primary"
-            href="https://twitter.com/intent/tweet"
+            href={`https://twitter.com/intent/tweet/?hashtags=quotes&related=freecodecamp&text=${
+              quotes ? quotes[index].quote : ''
+            }${quotes ? '-- ' + quotes[index].author : ''}`}
             target="_blank"
             rel="noreferrer noopener"
           >
-            Twitter
+            <i className="fab fa-twitter"></i>
           </a>
 
           <button id="new-quote" className="btn btn-secondary" onClick={handleRandomIndex}>
@@ -97,7 +99,9 @@ const App = () => {
         </div>
       </div>
       <div className="footer">
-        by: <a href="/">my codepen</a>
+        <a className="text-muted" href="https://codepen.io/jvracasa/full/zYBGdbp" target="_blank" rel="noreferrer">
+          by: jvince
+        </a>
       </div>
     </div>
   );

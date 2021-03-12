@@ -27,7 +27,7 @@ const App = () => {
   return (
     <div
       className="
-                    quotes__body
+                    quotes_body
                     d-flex justify-content-center
                     align-items-center
                     min-vw-100 
@@ -95,6 +95,9 @@ const App = () => {
             New Quote
           </button>
         </div>
+      </div>
+      <div className="footer">
+        by: <a href="/">my codepen</a>
       </div>
     </div>
   );
